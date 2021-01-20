@@ -1,0 +1,16 @@
+public class John{  
+    public static void main(String[] args){  
+        long startTime = System.currentTimeMillis();  
+        StringBuffer sb = new StringBuffer();  
+        for (int index=0; index<100000; index++){  
+            sb.append("hi");  
+        }  
+        System.out.println("Time taken by StringBuffer: " + (System.currentTimeMillis() - startTime) + "ms" +sb);  
+        startTime = System.currentTimeMillis();  
+        StringBuilder sbu = new StringBuilder();  
+        for (int index=0; index<100000; index++){  
+            sbu.append("hi");  
+        }  
+        System.out.println("Time taken by StringBuilder: " + (System.currentTimeMillis() - startTime) + "ms" + sbu);  
+    }  
+}  

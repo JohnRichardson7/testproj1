@@ -1,0 +1,16 @@
+public class Break{
+   public static void main(String args[]){
+   
+      System.out.println("Break Statement\n");
+      for(int index=1;index<=5;index++){
+         if(index==4) break;
+         System.out.println(index);
+      }
+      
+      System.out.println("Continue Statement\n");
+      for(int index=1;index<=5;index++){
+         if(index==1) continue;
+         System.out.println(index);
+      }
+   }
+}

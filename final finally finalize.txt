@@ -1,0 +1,48 @@
+//Final
+
+Class Final
+{
+public static void main(String args[]){
+final int value=100;
+value=150;//It will throw an error
+System.out.println(value);
+}
+}
+
+//Finally
+ Class Finally{
+public static void main(String args[]){
+try{
+int value=10;
+float quotient=10/0;
+System.out.println(quotient);
+
+}
+catch(ArithmeticException e)
+{
+System.out.println("Number cannot be divided by zero");
+}
+finally
+{
+System.out.println("finally is executed");
+}
+}
+}
+
+//Finalize
+public class GarbageC{
+
+ public void finalize(){
+	 System.out.println("object is garbage collected");
+	 }
+
+ public static void main(String args[]){
+  GarbageC gc1=new GarbageC();
+  GarbageC gc2=new GarbageC();
+  gc1=null;
+  gc2=null;
+  System.gc();
+ }
+}
+ 
+ 

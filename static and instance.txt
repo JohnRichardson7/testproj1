@@ -1,0 +1,55 @@
+//Static
+public class Sample {
+
+	
+		 
+        static double salary = 1000;
+        static int a;
+        static int b;
+        static {
+           a = 10;
+           b = 20;
+        }
+        public static void main(String args[]) {
+
+        	  System.out.println("Value of a = " + a);
+        	  System.out.println("Value of b = " + b);
+
+        	 	}
+    } 
+	
+//Instance
+public class Demo {
+
+	
+		// TODO Auto-generated method stub
+		
+
+		    public String name;
+
+		    private int age;
+
+		    public Demo(String RecName)
+		    {
+		        name = RecName;
+		    }
+
+		    public void setAge(int RecSal)
+		    {
+		        age = RecSal;
+		    }
+
+		    public void printRec()
+		    {
+		        System.out.println("name : " + name ); 
+		        System.out.println("age :" + age); 
+		    }
+
+		    public static void main(String args[])
+		    {
+		        Demo d = new Demo("Johnny");
+		        d.setAge(21);
+		        d.printRec();
+		    }
+		
+	}
